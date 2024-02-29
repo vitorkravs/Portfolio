@@ -1,0 +1,141 @@
+@import "../../styles/variables.scss";
+
+#nav-links-container {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: $background-color;
+  padding: 0 10px;
+
+  #close-menu-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    border-bottom: $border-close-menu;
+    position: absolute;
+    right: 3rem;
+    top: 3rem;
+  }
+
+  .border-links {
+    border: $border-links;
+    width: 90%;
+    margin: 30px;
+  }
+
+  #nav-options-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    a {
+      color: $color-white;
+      font-size: 1.6rem;
+      text-decoration: none;
+      font-weight: 500;
+      padding: 15px;
+
+      .barra {
+        display: none;
+      }
+    }
+  }
+
+  #social-networks-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 10px;
+
+    a {
+      color: $color-white;
+      font-size: 1.6rem;
+      text-decoration: none;
+      font-weight: 500;
+
+      .icons {
+        padding: 15px;
+        border: $border-links;
+        border-radius: 50%;
+        width: 60px;
+        height: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+  }
+
+  &.active {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media (min-width: 1366px) {
+  #nav-links-container {
+    background-color: $color-3;
+    opacity: 1 !important;
+    transform: none !important;
+    display: block;
+    position: relative;
+    height: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    #close-menu-container {
+      display: none;
+    }
+
+    .border-links {
+      display: none;
+    }
+
+    #nav-options-container {
+      flex-direction: row;
+      justify-content: flex-end;
+      align-items: center;
+      gap: 10px;
+
+      a {
+        color: $color-white;
+        font-size: 1.2rem;
+        text-decoration: none;
+        font-weight: 400;
+        padding: 10px 5px 10px 0;
+        transition: 0.5s;
+
+        .barra {
+          display: inline;
+          padding-left: 5px;
+        }
+      }
+
+      a:hover {
+        color: $color-text-secundary;
+        font-size: 1.3rem;
+        padding: 10px 8px;
+      }
+    }
+
+    #social-networks-container {
+      display: none;
+    }
+
+    &.active {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}

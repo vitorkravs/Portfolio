@@ -1,4 +1,4 @@
-export function OpenNav() {
+export function OpenNavIcon() {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"

@@ -1,12 +1,14 @@
 "use client";
 
 import { useState } from "react";
-import { OpenNav } from "../OpenNav";
 
 import "./styles.scss";
-import Image from "next/image";
+
+//Icons
+import { faHouse } from "@fortawesome/free-solid-svg-icons";
+import { OpenNavIcon } from "../OpenNavIcon";
+import MenuNavegation from "../MenuNavegation/MenuNavegation";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faXmark } from "@fortawesome/free-solid-svg-icons";
 
 const Header = () => {
   //gerencia o estado do menu: ativo(true) ou desativado(false)
@@ -21,26 +23,14 @@ const Header = () => {
   return (
     <header>
       <div id="nav-container">
-        <div id="logo">Portifólio</div>
+        <div id="logo">
+          <p>Home</p>
+          <FontAwesomeIcon icon={faHouse} />
+        </div>
         <button id="menu-hamburguer" onClick={toggleMenu}>
-          <OpenNav />
+          <OpenNavIcon />
         </button>
-        <nav id="nav-links" className={isMenuOpen ? "active" : "desktop"}>
-          <div id="close-menu" onClick={toggleMenu}>
-            <p>Fechar</p>
-            <FontAwesomeIcon
-              icon={faXmark}
-              style={{ fontSize: "180%", color: "white" }}
-            />
-          </div>
-          <span className="border-links"></span>
-          <a href="/">Home</a>
-          <a href="/">Sobre mim</a>
-          <a href="/">Meus Projetos</a>
-          <a href="/">Tecnologias</a>
-          <a href="/">Contato</a>
-          <span className="border-links"></span>
-        </nav>
+        <MenuNavegation isMenuOpen={isMenuOpen} toggleMenu={toggleMenu} />
       </div>
       <div id="content-container"></div>
     </header>
