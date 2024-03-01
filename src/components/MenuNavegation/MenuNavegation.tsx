@@ -42,18 +42,17 @@ const MenuNavegation = ({ isMenuOpen, toggleMenu }: MenuNavegationProps) => {
         />
       </motion.div>
 
+      <span className="border-links"></span>
       <div id="nav-options-container">
-        <a href="/">
-          Home<span className="barra">|</span>
-        </a>
-        <a href="/">
-          Sobre mim<span className="barra">|</span>
-        </a>
-        <a href="/">
-          Meus Projetos<span className="barra">|</span>
-        </a>
+        <a href="/">Home</a>
+        <span className="barra">|</span>
+        <a href="/">Sobre mim</a>
+        <span className="barra">|</span>
+        <a href="/">Meus Projetos</a>
+        <span className="barra">|</span>
         <a href="/">Contato</a>
       </div>
+      <span className="border-links"></span>
 
       <div id="social-networks-container">
         <a
