@@ -31,58 +31,17 @@ header {
     justify-content: space-between;
     align-items: center;
   }
+}
 
-  #content-container {
-    display: flex;
-    flex-direction: column-reverse;
-    justify-content: center;
-    align-items: center;
-    border-radius: 0 0 30px 30px;
-    background: $background-menu-links;
-
-    #text-container {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-
-      h1 {
-        font-size: 3rem;
-        text-align: center;
-        color: $color-text-primary;
-      }
-
-      #infos-container {
-        width: 90%;
-        margin: 10px 0;
-
-        p {
-          color: $color-text-primary;
-          padding: 1rem 0;
-          text-align: center;
-        }
-      }
-    }
-
-    #img-perfil-container {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin: 2.5rem 0 1rem 0;
-      padding: 15px;
-      background-color: $color-text-tertiary;
-      border-radius: 50%;
-      .img-perfil {
-        padding: 10px;
-        background-color: $color-text-secundary;
-        border-radius: 50%;
-      }
-    }
+@media (min-width: 768px) {
+  header {
+    padding-top: 10px;
   }
 }
 
-@media (min-width: 960px) {
+@media (min-width: 900px) {
   header {
+    padding-top: 0;
     #menu-hamburguer {
       display: none;
     }
