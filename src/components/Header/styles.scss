@@ -53,8 +53,8 @@ header {
       }
 
       #infos-container {
-        width: 100%;
-        margin: 20px 0;
+        width: 90%;
+        margin: 10px 0;
 
         p {
           color: $color-text-primary;
@@ -68,7 +68,7 @@ header {
       display: flex;
       justify-content: center;
       align-items: center;
-      margin-top: 3rem;
+      margin: 2.5rem 0 1rem 0;
       padding: 15px;
       background-color: $color-text-tertiary;
       border-radius: 50%;
