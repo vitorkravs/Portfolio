@@ -1,0 +1,166 @@
+@import "../../styles/variables.scss";
+
+#content-container {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0 0 30px 30px;
+  background: $background-menu-links;
+
+  #text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h1 {
+      font-size: 3rem;
+      text-align: center;
+      color: $color-text-primary;
+    }
+
+    #infos-container {
+      width: 80%;
+      margin: 10px 0;
+
+      p {
+        color: $color-text-primary;
+        padding: 1rem 0;
+        text-align: center;
+      }
+    }
+
+    #button-img-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      #button-header {
+        button {
+          background-color: $background;
+          padding: 1.2rem 2rem;
+          width: max-content;
+          border: none;
+          border-radius: 2rem;
+          color: $color-text-secundary;
+          font-size: 1.1rem;
+          font-weight: 600;
+        }
+      }
+
+      #img-student-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        a {
+          color: $color-text-primary;
+          text-decoration: none;
+          font-size: 0.6rem;
+        }
+      }
+    }
+  }
+
+  #img-perfil-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2.5rem 0 1rem 0;
+    padding: 15px;
+    background-color: $color-text-tertiary;
+    border-radius: 50%;
+    .img-perfil {
+      padding: 10px;
+      background-color: $color-text-secundary;
+      border-radius: 50%;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  #content-container {
+    flex-direction: row;
+    #text-container {
+      width: 80%;
+
+      h1 {
+        font-size: 3.5rem;
+        text-align: justify;
+        padding-left: 2rem;
+        color: $color-text-primary;
+      }
+
+      #infos-container {
+        width: 85%;
+        margin: 10px 0;
+
+        p {
+          color: $color-text-primary;
+          padding: 1rem 0;
+          font-size: 1.1rem;
+          text-align: justify;
+        }
+      }
+
+      #button-img-container {
+        width: 80%;
+        flex-direction: row;
+        justify-content: flex-start;
+        gap: 2.7rem;
+      }
+    }
+
+    #img-perfil-container {
+      .img-perfil {
+        padding: 20px;
+        width: 300px;
+        height: 300px;
+      }
+    }
+  }
+}
+
+@media (min-width: 900px) {
+  #content-container {
+    height: 100vh;
+    justify-content: space-around;
+
+    #text-container {
+      width: 48%;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+
+      h1 {
+        font-size: 4rem;
+        width: 100%;
+        text-align: justify;
+        padding-left: 0;
+        color: $color-text-primary;
+      }
+
+      #infos-container {
+        width: 85%;
+        margin: 10px 0;
+
+        p {
+          color: $color-text-primary;
+          padding: 1rem 0;
+          font-size: 1.1rem;
+          text-align: justify;
+        }
+      }
+
+      #button-img-container {
+        width: 80%;
+        flex-direction: row;
+        justify-content: flex-start;
+        gap: 8rem;
+      }
+    }
+  }
+}
