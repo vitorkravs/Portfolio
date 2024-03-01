@@ -2,10 +2,10 @@
 
 header {
   width: 100%;
+  height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
+  background-color: $background;
 
   #logo {
     display: flex;
@@ -18,25 +18,77 @@ header {
   }
 
   #menu-hamburguer {
-    background-color: $color-3;
+    background-color: transparent;
     border: none;
   }
 
   #nav-container {
-    padding: 15px;
+    padding: 0px 15px 15px 15px;
     width: 100%;
-    background-color: $color-3;
+    background: $background;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
   }
+
+  #content-container {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0 0 30px 30px;
+    background: $background-menu-links;
+
+    #text-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      h1 {
+        font-size: 3rem;
+        text-align: center;
+        color: $color-text-primary;
+      }
+
+      #infos-container {
+        width: 100%;
+        margin: 20px 0;
+
+        p {
+          color: $color-text-primary;
+          padding: 1rem 0;
+          text-align: center;
+        }
+      }
+    }
+
+    #img-perfil-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 3rem;
+      padding: 15px;
+      background-color: $color-text-tertiary;
+      border-radius: 50%;
+      .img-perfil {
+        padding: 10px;
+        background-color: $color-text-secundary;
+        border-radius: 50%;
+      }
+    }
+  }
 }
 
-@media (min-width: 1366px) {
+@media (min-width: 960px) {
   header {
     #menu-hamburguer {
       display: none;
+    }
+
+    #nav-container {
+      padding: 15px;
     }
   }
 }
