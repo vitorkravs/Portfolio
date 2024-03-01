@@ -14,21 +14,26 @@ import {
   faGithub,
 } from "@fortawesome/free-brands-svg-icons";
 
-const MenuNavegation = (params: any) => {
+type MenuNavegationProps = {
+  isMenuOpen: boolean;
+  toggleMenu: () => void;
+};
+
+const MenuNavegation = ({ isMenuOpen, toggleMenu }: MenuNavegationProps) => {
   return (
     <motion.nav
       initial="closed"
-      animate={params.isMenuOpen ? "opened" : "closed"}
+      animate={isMenuOpen ? "opened" : "closed"}
       variants={menuAnimation}
       id="nav-links-container"
-      className={params.isMenuOpen ? "active" : "desktop"}
+      className={isMenuOpen ? "active" : "desktop"}
     >
       <motion.div
         initial="opened"
-        animate={params.isMenuOpen ? "opened" : "closed"}
+        animate={isMenuOpen ? "opened" : "closed"}
         variants={menuAnimation}
         id="close-menu-container"
-        onClick={params.toggleMenu}
+        onClick={toggleMenu}
       >
         <p>Fechar</p>
         <FontAwesomeIcon
@@ -37,7 +42,6 @@ const MenuNavegation = (params: any) => {
         />
       </motion.div>
 
-      <span className="border-links"></span>
       <div id="nav-options-container">
         <a href="/">
           Home<span className="barra">|</span>
@@ -50,7 +54,6 @@ const MenuNavegation = (params: any) => {
         </a>
         <a href="/">Contato</a>
       </div>
-      <span className="border-links"></span>
 
       <div id="social-networks-container">
         <a
