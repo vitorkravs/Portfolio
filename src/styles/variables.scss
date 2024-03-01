@@ -1,12 +1,14 @@
-// Paleta de cores: https://color.adobe.com/pt/search?q=Neutral%20palette&t=term
+// Paleta de cores: https://color.adobe.com/pt/create/image
 
-$background-color: #0d0d0d;
-$color-white: #fff;
-$color-text-primary: #f2f2f2;
-$color-text-secundary: #0d0d0d;
-$color-2: #8c0327;
-$color-3: #a60321;
-$color-4: #a6754b;
+$background: #f2f2f2;
+$background-menu-links: #1c6ec5;
+$background-gradient-header: linear-gradient(45deg, #c52bd9 30%, #f25270);
+$background-gradient-header-content: linear-gradient(90deg, #23d9c7, #f2f2f2);
 
-$border-links: 0.5px solid #8c0327;
+$color-text-primary: #fff;
+$color-text-secundary: #c52bd9;
+$color-text-tertiary: #f2811d;
+$color-text: black;
+
+$border-links: 0.5px solid #f2f2f2;
 $border-close-menu: 0.5px solid white;
