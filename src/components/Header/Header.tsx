@@ -5,7 +5,7 @@ import { useState } from "react";
 import "./styles.scss";
 
 //Icons
-import { faHouse } from "@fortawesome/free-solid-svg-icons";
+import { faBook, faHouse } from "@fortawesome/free-solid-svg-icons";
 import { OpenNavIcon } from "../OpenNavIcon";
 import MenuNavegation from "../MenuNavegation/MenuNavegation";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -25,8 +25,8 @@ const Header = () => {
     <header>
       <div id="nav-container">
         <div id="logo">
-          <p>Home</p>
-          <FontAwesomeIcon icon={faHouse} />
+          <p>Portifólio</p>
+          <FontAwesomeIcon icon={faBook} />
         </div>
         <button id="menu-hamburguer" onClick={toggleMenu}>
           <OpenNavIcon />

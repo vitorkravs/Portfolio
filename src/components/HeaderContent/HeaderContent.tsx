@@ -39,7 +39,7 @@ const HeaderContent = () => {
           transition={{ duration: 0.5, delay: 0.8 }}
           id="button-img-container"
         >
-          <div id="button-header">
+          <div id="button-content">
             <button>Sobre mim</button>
           </div>
           <div id="img-student-container">
