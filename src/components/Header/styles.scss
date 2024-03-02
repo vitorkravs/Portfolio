@@ -36,6 +36,11 @@ header {
 @media (min-width: 768px) {
   header {
     padding-top: 10px;
+
+    #nav-container {
+      width: 95%;
+      margin: 0 auto;
+    }
   }
 }
 
@@ -47,6 +52,7 @@ header {
     }
 
     #nav-container {
+      width: 88%;
       padding: 15px;
     }
   }
