@@ -5,7 +5,7 @@ import { useState } from "react";
 import "./styles.scss";
 
 //Icons
-import { faBook, faHouse } from "@fortawesome/free-solid-svg-icons";
+import { faBook } from "@fortawesome/free-solid-svg-icons";
 import { OpenNavIcon } from "../OpenNavIcon";
 import MenuNavegation from "../MenuNavegation/MenuNavegation";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
