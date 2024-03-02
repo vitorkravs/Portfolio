@@ -13,6 +13,7 @@ import {
   faInstagram,
   faGithub,
 } from "@fortawesome/free-brands-svg-icons";
+import { useEffect } from "react";
 
 type MenuNavegationProps = {
   isMenuOpen: boolean;
@@ -20,6 +21,16 @@ type MenuNavegationProps = {
 };
 
 const MenuNavegation = ({ isMenuOpen, toggleMenu }: MenuNavegationProps) => {
+  //Se o menu estiver ativo, a opção de touchmove(rolagem da página) é desativada.
+  useEffect(() => {
+    if (isMenuOpen) {
+      // Adiciona ouvinte de evento para prevenir scroll
+      document.body.style.overflow = "hidden";
+    } else {
+      // Remove ouvinte de evento para permitir scroll
+      document.body.style.overflow = "auto";
+    }
+  }, [isMenuOpen]);
   return (
     <motion.nav
       initial="closed"

@@ -6,7 +6,11 @@ import Image from "next/image";
 //Animação
 import { motion } from "framer-motion";
 
-const HeaderContent = () => {
+type HeaderContentProps = {
+  isMenuOpen: boolean;
+};
+
+const HeaderContent = ({ isMenuOpen }: HeaderContentProps) => {
   return (
     <div id="content-container">
       <div id="text-container">
