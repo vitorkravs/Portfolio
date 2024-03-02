@@ -76,6 +76,7 @@ const HeaderContent = ({ isMenuOpen }: HeaderContentProps) => {
           height={220}
           alt="Foto de perfil"
           className="img-perfil"
+          priority
         />
       </motion.div>
     </div>
