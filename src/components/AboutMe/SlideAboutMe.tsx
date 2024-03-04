@@ -27,22 +27,25 @@ const SlideAboutMe = () => {
       <div id="cards-container">
         <SwiperSlide>
           <div id="card-one">
-            <h3>Educação</h3>
-            <p>
-              Iniciei meus estudos na escola Sesi Itapetininga, com início em
-              2009 e conclusão em 2021, e desde de sempre fui fascinado por
-              tecnologia, então decidi fazer cursos na internet sobre
-              programação e acabei me apaixonando mais pela área, fazendo com
-              que eu começasse minha graduação em engenharia de softaware na
-              uninter para me tornar um profissional com exelencia e capacitado
-              na área.
-            </p>
-            <div id="img-card-container">
+            <div className="section-card-text">
+              <h3>Educação</h3>
+              <p>
+                Iniciei meus estudos na escola Sesi Itapetininga, com início em
+                2009 e conclusão em 2021, e desde de sempre fui fascinado por
+                tecnologia, então decidi fazer cursos na internet sobre
+                programação e acabei me apaixonando mais pela área, fazendo com
+                que eu começasse minha graduação em engenharia de softaware na
+                uninter para me tornar um profissional com exelencia e
+                capacitado na área.
+              </p>
+            </div>
+            <div className="img-card-container">
               <Image
                 src="/sesi-logo.jpg"
                 alt="Logo do sesi"
                 width={150}
                 height={100}
+                className="logo"
               />
               <Image
                 src="/logo-uninter.png"
@@ -50,29 +53,33 @@ const SlideAboutMe = () => {
                 width={150}
                 height={100}
                 style={{ background: "white" }}
+                className="logo"
               />
             </div>
           </div>
         </SwiperSlide>
         <SwiperSlide>
           <div id="card-two">
-            <h3>Exeperiências Profissional</h3>
-            <p>
-              Infelizmente na área da tecnologia só pude adiquirir experiência
-              de projetos pessoais e acadêmicos, porém já trabalhei em uma
-              grande indústria, Universal Chemical, onde pude adquirir várias
-              soft skills como comunicação, tomada de decisões, flexibilidade,
-              gestão de tempo e trabalho em grupo que era fundamental para o
-              cumprimento de metas, qualidade do produto e nossa própria
-              segurança.
-            </p>
-            <div id="img-card-container">
+            <div className="section-card-text">
+              <h3>Exeperiência Profissional</h3>
+              <p>
+                Infelizmente na área da tecnologia só pude adiquirir experiência
+                de projetos pessoais e acadêmicos, porém já trabalhei em uma
+                grande indústria, Universal Chemical, onde pude adquirir várias
+                soft skills como comunicação, tomada de decisões, flexibilidade,
+                gestão de tempo e trabalho em grupo que era fundamental para o
+                cumprimento de metas, qualidade do produto e nossa própria
+                segurança.
+              </p>
+            </div>
+            <div className="img-card-container">
               <Image
                 src="/logo-universal-chemical.jpg"
                 alt="Foto de perfil"
                 width={250}
                 height={100}
                 style={{ background: "white" }}
+                className=""
               />
             </div>
           </div>
