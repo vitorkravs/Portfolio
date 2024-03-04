@@ -92,7 +92,6 @@
 @media (min-width: 768px) {
   #content-container {
     flex-direction: row;
-    padding-bottom: 0px;
     #text-container {
       width: 80%;
 
@@ -138,6 +137,7 @@
   #content-container {
     height: 100vh;
     justify-content: space-around;
+    padding-bottom: 0px;
 
     #text-container {
       width: 48%;
