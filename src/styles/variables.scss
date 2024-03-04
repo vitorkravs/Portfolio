@@ -2,14 +2,17 @@
 
 $background: #f2f2f2;
 $background-menu-links: #1c6ec5;
-$background-gradient-header: linear-gradient(45deg, #c52bd9 30%, #f25270);
 $background-gradient-header-content: linear-gradient(90deg, #23d9c7, #f2f2f2);
+
+$text-title-gradient: linear-gradient(45deg, #c52bd9 30%, #1c6ec5);
 
 $color-text-primary: #fff;
 $color-text-secundary: #c52bd9;
 $color-text-tertiary: #f9a23e;
 $color-text-four: #1c6ec5;
 $color-text: black;
+$color-text-paleta: #f25270;
 
 $border-links: 0.5px solid #f2f2f2;
+$border-title: 0.5px solid #1c6ec5;
 $border-close-menu: 0.5px solid white;

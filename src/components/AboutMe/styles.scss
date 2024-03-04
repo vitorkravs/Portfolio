@@ -1,1 +1,60 @@
 @import "../../styles/variables.scss";
+
+#about-me-container {
+  margin: 4rem 0.5rem;
+  border-radius: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  #title-about-me {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+    #title {
+      font-size: 2.5rem;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      background-image: $text-title-gradient;
+    }
+
+    .border-title {
+      width: 70%;
+      border: $border-title;
+      margin: 1rem 0;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  #about-me-container {
+    #title-about-me {
+      #title {
+        font-size: 3rem;
+      }
+
+      .border-title {
+        width: 60%;
+      }
+    }
+  }
+}
+
+@media (min-width: 900px) {
+  #about-me-container {
+    #title-about-me {
+      #title {
+        font-size: 4rem;
+      }
+
+      .border-title {
+        width: 50%;
+      }
+    }
+  }
+}
