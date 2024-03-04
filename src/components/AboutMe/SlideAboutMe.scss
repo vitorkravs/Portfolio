@@ -1,0 +1,54 @@
+@import "../../styles/variables.scss";
+
+.swiper {
+  width: 100%;
+  height: 100%;
+  background: $text-title-gradient;
+  padding: 1rem;
+  border-radius: 3rem;
+
+  .swiper-slide {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0.8rem;
+    height: 100%;
+
+    #card-one,
+    #card-two {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      gap: 2rem;
+      margin: 2rem;
+      padding: 1rem 2rem;
+      overflow: hidden;
+
+      h3 {
+        text-align: center;
+        font-size: 2rem;
+        color: $color-text-primary;
+      }
+
+      p {
+        font-size: 1rem;
+        background-color: $color-text-primary;
+        width: 100%;
+        padding: 25px;
+        border-radius: 3rem;
+        text-align: justify;
+      }
+
+      #img-card-container {
+        display: flex;
+        flex-direction: row;
+        align-items: space-around;
+        gap: 1rem;
+      }
+    }
+  }
+}
