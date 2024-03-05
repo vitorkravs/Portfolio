@@ -9,7 +9,7 @@ import { motion } from "framer-motion";
 
 const AboutMe = () => {
   return (
-    <motion.div
+    <motion.section
       initial={{ opacity: 0, x: -100 }}
       whileInView={{ opacity: 1, x: 0 }}
       exit={{ opacity: 0 }}
@@ -22,7 +22,7 @@ const AboutMe = () => {
       </div>
 
       <SlideAboutMe />
-    </motion.div>
+    </motion.section>
   );
 };
 
