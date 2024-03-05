@@ -34,7 +34,7 @@ const Header = () => {
         <MenuNavegation isMenuOpen={isMenuOpen} toggleMenu={toggleMenu} />
       </div>
 
-      <HeaderContent isMenuOpen={isMenuOpen} />
+      <HeaderContent />
     </header>
   );
 };
