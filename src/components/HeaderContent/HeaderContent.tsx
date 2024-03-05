@@ -6,11 +6,7 @@ import Image from "next/image";
 //Animação
 import { motion } from "framer-motion";
 
-type HeaderContentProps = {
-  isMenuOpen: boolean;
-};
-
-const HeaderContent = ({ isMenuOpen }: HeaderContentProps) => {
+const HeaderContent = () => {
   return (
     <div id="content-container">
       <div id="text-container">
@@ -18,7 +14,7 @@ const HeaderContent = ({ isMenuOpen }: HeaderContentProps) => {
           initial={{ opacity: 0, x: -100 }}
           whileInView={{ opacity: 1, x: 0 }}
           exit={{ opacity: 0 }}
-          transition={{ duration: 0.5, delay: 0.5 }}
+          transition={{ duration: 0.5, delay: 0.2 }}
         >
           Desenvolvedor Front-end
         </motion.h1>
@@ -26,7 +22,7 @@ const HeaderContent = ({ isMenuOpen }: HeaderContentProps) => {
           initial={{ opacity: 0, x: -100 }}
           whileInView={{ opacity: 1, x: 0 }}
           exit={{ opacity: 0 }}
-          transition={{ duration: 0.5, delay: 0.8 }}
+          transition={{ duration: 0.5, delay: 0.3 }}
           id="infos-container"
         >
           <p>
@@ -67,7 +63,7 @@ const HeaderContent = ({ isMenuOpen }: HeaderContentProps) => {
         initial={{ opacity: 0, x: -100 }}
         whileInView={{ opacity: 1, x: 0 }}
         exit={{ opacity: 0 }}
-        transition={{ duration: 0.5 }}
+        transition={{ duration: 0.5, delay: 0.5 }}
         id="img-perfil-container"
       >
         <Image
