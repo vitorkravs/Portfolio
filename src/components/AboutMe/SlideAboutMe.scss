@@ -7,6 +7,11 @@
   padding: 1rem;
   border-radius: 3rem;
 
+  .swiper-button-prev,
+  .swiper-button-next {
+    color: $color-text-primary;
+  }
+
   .swiper-slide {
     display: flex;
     flex-direction: column;
@@ -29,10 +34,23 @@
       overflow: hidden;
 
       .section-card-text {
-        h3 {
-          text-align: center;
-          font-size: 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+
+        .section-card-text-title {
+          display: flex;
+          align-items: center;
+          justify-content: flex-start;
           color: $color-text-primary;
+          gap: 1rem;
+
+          h3 {
+            text-align: center;
+            font-size: 2rem;
+            color: $color-text-primary;
+          }
         }
 
         p {
@@ -55,6 +73,21 @@
   }
 }
 
+@media (min-width: 500px) {
+  .swiper {
+    .swiper-slide {
+      #card-one,
+      #card-two {
+        .section-card-text {
+          p {
+            width: 80%;
+          }
+        }
+      }
+    }
+  }
+}
+
 @media (min-width: 768px) {
   .swiper {
     .swiper-slide {
@@ -65,9 +98,44 @@
         margin: 0rem;
 
         .section-card-text {
+          width: 50%;
+
+          h3 {
+            font-size: 2.5rem;
+          }
+
+          p {
+            width: 90%;
+            font-size: 1.2rem;
+          }
+        }
+
+        .img-card-container {
+          flex-direction: column;
+          align-items: center;
+
+          .logo {
+            width: 220px;
+            height: 120px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 900px) {
+  .swiper {
+    width: 70%;
+    .swiper-slide {
+      #card-one,
+      #card-two {
+        gap: 2.5rem;
+
+        .section-card-text {
           display: flex;
           flex-direction: column;
-          gap: 1rem;
+          gap: 2rem;
           width: 50%;
 
           h3 {
@@ -91,7 +159,4 @@
       }
     }
   }
-}
-
-@media (min-width: 900px) {
 }
