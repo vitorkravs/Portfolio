@@ -7,7 +7,7 @@ export async function fetchDataFromDatoCMS() {
             imgurl
             slug
             repository
-            backrepository
+            tecnologias
         }
     } 
     `;
