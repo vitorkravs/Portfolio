@@ -17,7 +17,7 @@ const AboutMe = () => {
       id="about-me-container"
     >
       <div id="title-about-me">
-        <h2 id="title">Sobre mim</h2>
+        <h2>Sobre mim</h2>
         <span className="border-title"></span>
       </div>
 
