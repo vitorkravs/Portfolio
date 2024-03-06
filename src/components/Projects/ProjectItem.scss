@@ -1,0 +1,81 @@
+@import "../../styles/variables.scss";
+
+#project-item-container {
+  background: no-repeat center;
+  background-size: cover;
+  width: 100%;
+  height: 20rem;
+  position: relative;
+  background-color: $color-text-four;
+  border-radius: 2rem;
+
+  .content {
+    width: 100%;
+    height: 100%;
+    background: rgba(7, 10, 65, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    transition: 0.3s;
+    border-radius: 2rem;
+
+    .text {
+      padding: 1rem;
+      color: $color-text-primary;
+      transition: 0.3s;
+    }
+
+    #button-project-container {
+      display: flex;
+      gap: 0.5rem;
+
+      a {
+        background-color: $color-text-primary;
+        padding: 0.5rem 1rem;
+        border-radius: 3rem;
+        width: 8rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 0.5rem;
+        text-decoration: none;
+        color: $color-text;
+        font-size: 0.8rem;
+        transition: 0.3s;
+      }
+
+      a:hover {
+        background-color: $color-text-secundary;
+        color: $color-text-primary;
+      }
+    }
+
+    #tecnologias-container {
+      color: $color-text-primary;
+      border-radius: 2rem;
+      width: 90%;
+      padding: 0.5rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.3rem;
+      transition: 0.3s;
+    }
+  }
+
+  .content:hover {
+    background: rgba(197, 43, 217, 0);
+
+    .text {
+      padding: 1rem;
+      color: $color-text-primary;
+      background-color: $color-text-tertiary;
+    }
+
+    #tecnologias-container {
+      color: $color-text-secundary;
+      background-color: $color-text-primary;
+    }
+  }
+}
