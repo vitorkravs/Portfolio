@@ -33,7 +33,7 @@ const ProjectItem = ({
       initial={{ opacity: 0, x: -100 }}
       whileInView={{ opacity: 1, x: 0 }}
       exit={{ opacity: 0 }}
-      transition={{ duration: 0.5, delay: 0.5 }}
+      transition={{ duration: 0.5 }}
       id="project-item-container"
       style={{
         backgroundImage: `url(${imgURL})`,
