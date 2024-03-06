@@ -1,0 +1,46 @@
+@import "../../styles/variables.scss";
+
+#title-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+
+  h2 {
+    font-size: 2.5rem;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    background-image: $text-title-gradient;
+  }
+
+  .border-title {
+    width: 70%;
+    border: $border-title;
+    margin: 1rem 0;
+  }
+}
+
+@media (min-width: 768px) {
+  #title-container {
+    h2 {
+      font-size: 3rem;
+    }
+
+    .border-title {
+      width: 60%;
+    }
+  }
+}
+@media (min-width: 900px) {
+  #title-container {
+    #title {
+      font-size: 4rem;
+    }
+
+    .border-title {
+      width: 50%;
+    }
+  }
+}

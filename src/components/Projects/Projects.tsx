@@ -12,6 +12,7 @@ import { useState, useEffect } from "react";
 //pegar dados do datoCMS
 import { fetchDataFromDatoCMS } from "../Lib/DataCMS";
 import ProjectItem from "./ProjectItem";
+import TitleContainer from "../TitleContainer/TitleContainer";
 
 const Projects = () => {
   const [projects, setProjects] = useState([]);
@@ -35,10 +36,7 @@ const Projects = () => {
       transition={{ duration: 0.5 }}
       id="projects-container"
     >
-      <div id="title-projects">
-        <h2>Meus projetos</h2>
-        <span className="border-title"></span>
-      </div>
+      <TitleContainer text="Meus Projetos" />
       <div id="projects">
         {projects.slice(0, 4).map((project: any) => (
           <ProjectItem

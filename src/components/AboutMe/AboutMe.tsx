@@ -1,5 +1,6 @@
 "use client";
 
+import TitleContainer from "../TitleContainer/TitleContainer";
 //styles
 import SlideAboutMe from "./SlideAboutMe";
 import "./styles.scss";
@@ -16,10 +17,7 @@ const AboutMe = () => {
       transition={{ duration: 0.5, delay: 0.5 }}
       id="about-me-container"
     >
-      <div id="title-about-me">
-        <h2>Sobre mim</h2>
-        <span className="border-title"></span>
-      </div>
+      <TitleContainer text="Sobre Mim" />
 
       <SlideAboutMe />
     </motion.section>

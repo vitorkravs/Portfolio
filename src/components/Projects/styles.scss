@@ -8,29 +8,6 @@
   justify-content: center;
   align-items: center;
 
-  #title-projects {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-
-    h2 {
-      font-size: 2.5rem;
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-clip: text;
-      background-image: $text-title-gradient;
-      text-transform: capitalize;
-    }
-
-    .border-title {
-      width: 70%;
-      border: $border-title;
-      margin: 1rem 0;
-    }
-  }
-
   #projects {
     width: 100%;
     display: grid;
@@ -44,16 +21,6 @@
 
 @media (min-width: 768px) {
   #projects-container {
-    #title-projects {
-      h2 {
-        font-size: 3rem;
-      }
-
-      .border-title {
-        width: 60%;
-      }
-    }
-
     #projects {
       grid-template-columns: 1fr 1fr;
       gap: 1.8rem;
@@ -63,16 +30,6 @@
 
 @media (min-width: 900px) {
   #projects-container {
-    #title-projects {
-      h2 {
-        font-size: 4rem;
-      }
-
-      .border-title {
-        width: 50%;
-      }
-    }
-
     #projects {
       width: 90%;
     }
