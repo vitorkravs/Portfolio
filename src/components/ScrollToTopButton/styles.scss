@@ -1,0 +1,33 @@
+@import "../../styles/variables.scss";
+
+#scroll-to-top-button {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: 2rem;
+  right: 1rem;
+  background: $color-text-paleta;
+  color: $color-text-primary;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  z-index: 50;
+  font-size: 1.3rem;
+  border: 1px solid $color-text-primary;
+}
+
+@media (min-width: 768px) {
+  #scroll-to-top-button {
+    width: 4rem;
+    height: 4rem;
+    bottom: 3rem;
+    right: 2rem;
+  }
+
+  #scroll-to-top-button:hover {
+    cursor: pointer;
+  }
+}
+@media (min-width: 768px) {
+}
