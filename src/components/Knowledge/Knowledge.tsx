@@ -17,6 +17,9 @@ import { SlArrowDownCircle, SlArrowUpCircle } from "react-icons/sl";
 //hooks
 import { useState } from "react";
 
+//animações
+import { motion } from "framer-motion";
+
 const Knowledge = () => {
   const [isActive, setIsActive] = useState(false);
 
@@ -26,10 +29,22 @@ const Knowledge = () => {
   };
 
   return (
-    <section id="knowledge-container">
+    <motion.section
+      initial={{ opacity: 0, x: -100 }}
+      whileInView={{ opacity: 1, x: 0 }}
+      exit={{ opacity: 0 }}
+      transition={{ duration: 0.5 }}
+      id="knowledge-container"
+    >
       <TitleContainer text="Hard Skills" />
       <div id="knowledge">
-        <div id="in-this-project">
+        <motion.div
+          initial={{ opacity: 0, x: -100 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          exit={{ opacity: 0 }}
+          transition={{ duration: 0.5, delay: 0.1 }}
+          id="in-this-project"
+        >
           <h3>Usados nesse Portfólio:</h3>
           <div id="icons-in-this-project">
             {iconsInThisProject.map(({ id, Icon, skill }) => (
@@ -38,8 +53,14 @@ const Knowledge = () => {
               </p>
             ))}
           </div>
-        </div>
-        <div id="general-knowledge">
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0, x: -100 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          exit={{ opacity: 0 }}
+          transition={{ duration: 0.5, delay: 0.2 }}
+          id="general-knowledge"
+        >
           <h3>Conhecimentos Gerais:</h3>
 
           <div id="icons-knowledge-container">
@@ -66,9 +87,9 @@ const Knowledge = () => {
             {isActive ? "Ver menos" : "Veja mais"}
             {isActive ? <SlArrowUpCircle /> : <SlArrowDownCircle />}
           </button>
-        </div>
+        </motion.div>
       </div>
-    </section>
+    </motion.section>
   );
 };
 
