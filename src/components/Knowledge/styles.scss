@@ -1,26 +1,111 @@
 @import "../../styles/variables.scss";
 
-#conhecimentos-container {
-  #title-conhecimentos {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
+#knowledge-container {
+  width: 100%;
+  margin: 0 auto;
+  #knowledge {
+    background-color: $color-text-four;
+    margin: 0.5rem;
+    border-radius: 3rem;
+    color: $color-text-primary;
+    padding: 1rem 0;
+    overflow: hidden;
 
-    h2 {
-      font-size: 2.5rem;
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-clip: text;
-      background-image: $text-title-gradient;
-      text-transform: capitalize;
+    #in-this-project,
+    #general-knowledge {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin: 1rem;
+      overflow: hidden;
+
+      h3 {
+        font-size: 1.5rem;
+        text-align: center;
+        width: 90%;
+        border-bottom: $border-links;
+        padding: 1rem 0;
+      }
+
+      p {
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        gap: 0.5rem;
+        font-size: 1.2rem;
+        transition: 0.5s;
+
+        .icons-knowledge {
+          font-size: 2rem;
+        }
+      }
     }
 
-    .border-title {
-      width: 70%;
-      border: $border-title;
-      margin: 1rem 0;
+    #in-this-project {
+      border-radius: 2rem 2rem 0 0;
+      background-color: $color-text-tertiary;
+      #icons-in-this-project {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        padding-bottom: 1rem;
+
+        p:hover {
+          background-color: $color-text-secundary;
+        }
+      }
     }
+
+    #general-knowledge {
+      background-color: $color-text-secundary;
+      border-radius: 0 0 2rem 2rem;
+
+      .btn-knowledge {
+        margin: 1rem 0;
+        width: 50%;
+        border: none;
+        border-radius: 2rem;
+        height: 3rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 0.5rem;
+        font-size: 1.2rem;
+        color: $color-text-secundary;
+        background-color: $color-text-primary;
+      }
+
+      .btn-knowledge:hover {
+        background-color: $color-text-tertiary;
+        color: $color-text-primary;
+        cursor: pointer;
+      }
+
+      #icons-knowledge-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+
+        p:hover {
+          background-color: $color-text-tertiary;
+        }
+
+        p.desable-icons-knowledge {
+          display: none;
+        }
+
+        p.active-icons-knowledge {
+          display: flex;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 900px) {
+  #knowledge-container {
+    width: 60%;
   }
 }
