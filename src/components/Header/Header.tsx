@@ -18,7 +18,6 @@ const Header = () => {
   //altera o estado do menu
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
-    console.log(isMenuOpen);
   };
 
   return (

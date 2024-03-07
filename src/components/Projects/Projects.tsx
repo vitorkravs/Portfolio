@@ -21,7 +21,6 @@ const Projects = () => {
     fetchDataFromDatoCMS()
       .then((data) => {
         setProjects(data);
-        console.log(data);
       })
       .catch((error) => {
         console.error("Erro ao obter dados:", error);
