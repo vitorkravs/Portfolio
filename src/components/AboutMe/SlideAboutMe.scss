@@ -126,6 +126,12 @@
 
 @media (min-width: 900px) {
   .swiper {
+    width: 95%;
+  }
+}
+
+@media (min-width: 1100px) {
+  .swiper {
     width: 70%;
     .swiper-slide {
       #card-one,
