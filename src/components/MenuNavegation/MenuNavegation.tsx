@@ -18,9 +18,14 @@ import { useEffect } from "react";
 type MenuNavegationProps = {
   isMenuOpen: boolean;
   toggleMenu: () => void;
+  handleClick: (e: React.MouseEvent<HTMLAnchorElement>) => void;
 };
 
-const MenuNavegation = ({ isMenuOpen, toggleMenu }: MenuNavegationProps) => {
+const MenuNavegation = ({
+  isMenuOpen,
+  toggleMenu,
+  handleClick,
+}: MenuNavegationProps) => {
   //Se o menu estiver ativo, a opção de touchmove(rolagem da página) é desativada.
   useEffect(() => {
     if (isMenuOpen) {
@@ -55,11 +60,17 @@ const MenuNavegation = ({ isMenuOpen, toggleMenu }: MenuNavegationProps) => {
 
       <span className="border-links"></span>
       <div id="nav-options-container">
-        <a href="/">Home</a>
+        <a href="#header-container" onClick={handleClick}>
+          Home
+        </a>
         <span className="barra">|</span>
-        <a href="/">Sobre mim</a>
+        <a href="#about-me-container" onClick={handleClick}>
+          Sobre mim
+        </a>
         <span className="barra">|</span>
-        <a href="/">Meus Projetos</a>
+        <a href="#projects-container" onClick={handleClick}>
+          Meus Projetos
+        </a>
         <span className="barra">|</span>
         <a href="/">Contato</a>
       </div>

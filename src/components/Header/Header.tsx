@@ -20,8 +20,15 @@ const Header = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
+  const handleClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
+    // Verifica se a largura da janela é menor que 900px
+    if (window.innerWidth < 900) {
+      toggleMenu();
+    }
+  };
+
   return (
-    <header>
+    <header id="header-container">
       <div id="nav-container">
         <div id="logo">
           <p>Portifólio</p>
@@ -30,7 +37,11 @@ const Header = () => {
         <button id="menu-hamburguer" onClick={toggleMenu}>
           <OpenNavIcon />
         </button>
-        <MenuNavegation isMenuOpen={isMenuOpen} toggleMenu={toggleMenu} />
+        <MenuNavegation
+          isMenuOpen={isMenuOpen}
+          toggleMenu={toggleMenu}
+          handleClick={handleClick}
+        />
       </div>
 
       <HeaderContent />
