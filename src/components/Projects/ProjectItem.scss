@@ -61,6 +61,7 @@
       flex-direction: column;
       gap: 0.3rem;
       transition: 0.3s;
+      font-weight: 700;
     }
   }
 
@@ -76,6 +77,19 @@
     #tecnologias-container {
       color: $color-text-secundary;
       background-color: $color-text-primary;
+    }
+  }
+}
+
+@media (min-width: 900px) {
+  #project-item-container {
+    .content {
+      #tecnologias-container {
+        p {
+          width: 80%;
+          margin: 0 auto;
+        }
+      }
     }
   }
 }
