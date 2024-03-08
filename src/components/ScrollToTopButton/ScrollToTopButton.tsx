@@ -4,16 +4,27 @@ import { FaArrowUp } from "react-icons/fa";
 
 import "./styles.scss";
 
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 
 const ScrollToTopButton = () => {
+  const [isVisible, setIsVisible] = useState(false);
+
+  //Função para detectar a rolagem e definir se o botão é visível
   useEffect(() => {
-    // Importa o polyfill apenas no lado do cliente
-    if (typeof window !== "undefined") {
-      const smoothscroll = require("smoothscroll-polyfill");
-      smoothscroll.polyfill();
-    }
+    const toggleVisibility = () => {
+      if (window.scrollY > 300) {
+        // Mudança aqui de pageYOffset para scrollY
+        setIsVisible(true);
+      } else {
+        setIsVisible(false);
+      }
+    };
+
+    window.addEventListener("scroll", toggleVisibility);
+
+    return () => window.removeEventListener("scroll", toggleVisibility);
   }, []);
+
   const ScrollToTop = () => {
     window.scrollTo({
       top: 0,
@@ -22,9 +33,11 @@ const ScrollToTopButton = () => {
   };
 
   return (
-    <button id="scroll-to-top-button" onClick={ScrollToTop}>
-      <FaArrowUp />
-    </button>
+    isVisible && (
+      <button id="scroll-to-top-button" onClick={ScrollToTop}>
+        <FaArrowUp />
+      </button>
+    )
   );
 };
 
