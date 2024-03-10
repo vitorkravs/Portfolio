@@ -40,7 +40,9 @@ const HeaderContent = () => {
           id="button-img-container"
         >
           <div id="button-content">
-            <button>Sobre mim</button>
+            <a className="button-content-link" href="#about-me-container">
+              Sobre mim
+            </a>
           </div>
           <div id="img-student-container">
             <Image

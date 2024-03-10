@@ -39,10 +39,12 @@
       justify-content: center;
 
       #button-content {
-        button {
+        margin: 1rem auto;
+        .button-content-link {
           background-color: $background;
           padding: 1.2rem 2rem;
           width: max-content;
+          text-decoration: none;
           border: none;
           border-radius: 2rem;
           color: $color-text-secundary;
@@ -51,7 +53,7 @@
           transition: 0.5s;
         }
 
-        button:hover {
+        .button-content-link:hover {
           background-color: $color-text-secundary;
           color: $color-text-primary;
           cursor: pointer;
@@ -115,10 +117,9 @@
       }
 
       #button-img-container {
-        width: 80%;
+        width: 90%;
         flex-direction: row;
         justify-content: flex-start;
-        gap: 2.7rem;
       }
     }
 
@@ -166,10 +167,25 @@
       }
 
       #button-img-container {
-        width: 80%;
         flex-direction: row;
         justify-content: flex-start;
-        gap: 8rem;
+        text-align: justify;
+        margin: 0;
+
+        #button-content {
+          margin: 1rem 8rem 0 0;
+
+          .button-content-link {
+            display: block;
+          }
+        }
+      }
+    }
+
+    #img-perfil-container {
+      .img-perfil {
+        width: 350px;
+        height: 350px;
       }
     }
   }
