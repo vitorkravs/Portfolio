@@ -72,7 +72,9 @@ const MenuNavegation = ({
           Meus Projetos
         </a>
         <span className="barra">|</span>
-        <a href="/">Contato</a>
+        <a href="#contact-container" onClick={handleClick}>
+          Contato
+        </a>
       </div>
       <span className="border-links"></span>
 
