@@ -13,7 +13,7 @@ const Footer = () => {
       </p>
       <div id="links-footer-container">
         <a
-          href="https://www.instagram.com/in/vitorkravs"
+          href="https://www.instagram.com/vitorkravs"
           target="_blank"
           rel="noopener noreferrer"
           className="links-footer footer-instagram"

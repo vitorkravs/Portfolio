@@ -98,7 +98,7 @@ const MenuNavegation = ({
           </div>
         </a>
         <a
-          href="https://www.instagram.com/in/vitorkravs"
+          href="https://www.instagram.com/vitorkravs"
           target="_blank"
           rel="noopener noreferrer"
         >
