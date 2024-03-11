@@ -45,7 +45,7 @@ const SlideAboutMe = () => {
                 tecnologia, então decidi fazer cursos na internet sobre
                 programação e acabei me apaixonando mais pela área, fazendo com
                 que eu começasse minha graduação em engenharia de softaware na
-                uninter para me tornar um profissional com exelencia e
+                uninter para me tornar um profissional com exelência e
                 capacitado na área.
               </p>
             </div>
