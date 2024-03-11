@@ -11,7 +11,7 @@ import { useState, useEffect } from "react";
 
 //pegar dados do datoCMS
 import { fetchDataFromDatoCMS } from "../Lib/DataCMS";
-import ProjectItem from "./ProjectItem";
+import ProjectItem from "../ProjectItem/ProjectItem";
 import TitleContainer from "../TitleContainer/TitleContainer";
 import Link from "next/link";
 
@@ -50,7 +50,9 @@ const SectionProjects = () => {
           />
         ))}
       </div>
-      <Link href="/Projects">Veja todos os projetos</Link>
+      <Link href="/Projects" className="go-all-projects">
+        Veja todos os projetos
+      </Link>
     </motion.section>
   );
 };
