@@ -5,6 +5,7 @@ import Image from "next/image";
 
 //Animação
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 const HeaderContent = () => {
   return (
@@ -40,9 +41,9 @@ const HeaderContent = () => {
           id="button-img-container"
         >
           <div id="button-content">
-            <a className="button-content-link" href="#about-me-container">
+            <Link className="button-content-link" href="#Sobre-mim">
               Sobre mim
-            </a>
+            </Link>
           </div>
           <div id="img-student-container">
             <Image
