@@ -29,13 +29,7 @@ const Projects = () => {
   }, []);
 
   return (
-    <motion.section
-      initial={{ opacity: 0, x: -100 }}
-      whileInView={{ opacity: 1, x: 0 }}
-      exit={{ opacity: 0 }}
-      transition={{ duration: 0.5 }}
-      id="projects-container"
-    >
+    <main id="projects-container">
       <TitleContainer text="Todos meus Projetos" />
       <div id="projects">
         {projects.map((project: any) => (
@@ -53,7 +47,7 @@ const Projects = () => {
       <Link href="../" className="go-home">
         Voltar para Home
       </Link>
-    </motion.section>
+    </main>
   );
 };
 
