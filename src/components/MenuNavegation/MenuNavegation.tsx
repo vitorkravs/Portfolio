@@ -14,6 +14,7 @@ import {
   faGithub,
 } from "@fortawesome/free-brands-svg-icons";
 import { useEffect } from "react";
+import Link from "next/link";
 
 type MenuNavegationProps = {
   isMenuOpen: boolean;
@@ -60,21 +61,21 @@ const MenuNavegation = ({
 
       <span className="border-links"></span>
       <div id="nav-options-container">
-        <a href="#header-container" onClick={handleClick}>
+        <Link href="#header-container" onClick={handleClick}>
           Home
-        </a>
+        </Link>
         <span className="barra">|</span>
-        <a href="#about-me-container" onClick={handleClick}>
+        <Link href="#about-me-container" onClick={handleClick}>
           Sobre mim
-        </a>
+        </Link>
         <span className="barra">|</span>
-        <a href="#projects-container" onClick={handleClick}>
+        <Link href="#projects-container" onClick={handleClick}>
           Meus Projetos
-        </a>
+        </Link>
         <span className="barra">|</span>
-        <a href="#contact-container" onClick={handleClick}>
+        <Link href="#contact-container" onClick={handleClick}>
           Contato
-        </a>
+        </Link>
       </div>
       <span className="border-links"></span>
 
