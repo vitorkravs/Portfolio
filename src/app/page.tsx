@@ -12,12 +12,12 @@ export default function Home() {
   return (
     <>
       <ScrollToTopButton />
-      <Header />
+      <Header idContainer="Header" />
       <main>
-        <AboutMe />
-        <SectionProjects />
-        <Knowledge />
-        <Contact />
+        <AboutMe idContainer="Sobre-mim" />
+        <SectionProjects idContainer="Projetos" />
+        <Knowledge idContainer="Conhecimentos" />
+        <Contact idContainer="Contato" />
       </main>
       <Footer />
     </>
