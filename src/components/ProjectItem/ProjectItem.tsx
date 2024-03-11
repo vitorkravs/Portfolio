@@ -1,5 +1,5 @@
 //styles
-import "./ProjectItem.scss";
+import "./styles.scss";
 
 //animação
 import { motion } from "framer-motion";
