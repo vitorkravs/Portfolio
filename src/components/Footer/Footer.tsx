@@ -4,6 +4,7 @@ import "./styles.scss";
 
 //icons
 import { SiGithub, SiInstagram, SiLinkedin } from "react-icons/si";
+import Link from "next/link";
 
 const Footer = () => {
   return (
@@ -40,9 +41,9 @@ const Footer = () => {
           Linkedin
         </a>
       </div>
-      <a href="#header-container" id="scroll-to-top-footer">
+      <Link href="#Header" id="scroll-to-top-footer">
         Voltar ao topo <SlArrowUpCircle className="icon-scroll-to-top-footer" />
-      </a>
+      </Link>
       <p id="rights-footer">
         Direitos reservados para{" "}
         <span id="name-footer">vitor cesar kravszenko</span>
