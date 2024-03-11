@@ -18,6 +18,23 @@
     border-radius: 2rem;
     margin: 0.5rem;
   }
+
+  .go-home,
+  .go-all-projects {
+    background-color: $color-text-tertiary;
+    padding: 1rem;
+    border-radius: 3rem;
+    color: $color-text-primary;
+    text-decoration: none;
+    font-weight: 700;
+    transition: 0.4s;
+  }
+
+  .go-home:hover,
+  .go-all-projects:hover {
+    background-color: $color-text-secundary;
+    cursor: pointer;
+  }
 }
 
 @media (min-width: 768px) {
