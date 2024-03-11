@@ -29,9 +29,9 @@ const Projects = () => {
   }, []);
 
   return (
-    <main id="projects-container">
+    <main id="Projetos">
       <TitleContainer text="Todos meus Projetos" />
-      <div id="projects">
+      <div id="projects-cards">
         {projects.map((project: any) => (
           <ProjectItem
             key={project.slug}
