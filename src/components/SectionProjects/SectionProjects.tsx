@@ -15,7 +15,11 @@ import ProjectItem from "../ProjectItem/ProjectItem";
 import TitleContainer from "../TitleContainer/TitleContainer";
 import Link from "next/link";
 
-const SectionProjects = () => {
+interface SectionProjectsProps {
+  idContainer: string;
+}
+
+const SectionProjects = ({ idContainer }: SectionProjectsProps) => {
   const [projects, setProjects] = useState([]);
 
   useEffect(() => {
@@ -34,10 +38,10 @@ const SectionProjects = () => {
       whileInView={{ opacity: 1, x: 0 }}
       exit={{ opacity: 0 }}
       transition={{ duration: 0.5 }}
-      id="projects-container"
+      id={idContainer}
     >
       <TitleContainer text="Meus Projetos" />
-      <div id="projects">
+      <div id="projects-cards">
         {projects.slice(0, 4).map((project: any) => (
           <ProjectItem
             key={project.slug}

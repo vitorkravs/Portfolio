@@ -20,7 +20,11 @@ import { useState } from "react";
 //animações
 import { motion } from "framer-motion";
 
-const Knowledge = () => {
+interface KnowledgeProps {
+  idContainer: string;
+}
+
+const Knowledge = ({ idContainer }: KnowledgeProps) => {
   const [isActive, setIsActive] = useState(false);
 
   //altera o estado
@@ -34,7 +38,7 @@ const Knowledge = () => {
       whileInView={{ opacity: 1, x: 0 }}
       exit={{ opacity: 0 }}
       transition={{ duration: 0.5 }}
-      id="knowledge-container"
+      id={idContainer}
     >
       <TitleContainer text="Hard Skills" />
       <div id="knowledge">

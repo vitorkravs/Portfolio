@@ -1,6 +1,6 @@
 @import "../../styles/variables.scss";
 
-#knowledge-container {
+#Conhecimentos {
   width: 100%;
   margin: 0 auto;
   #knowledge {
@@ -105,7 +105,7 @@
 }
 
 @media (min-width: 900px) {
-  #knowledge-container {
+  #Conhecimentos {
     width: 60%;
   }
 }

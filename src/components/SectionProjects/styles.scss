@@ -1,6 +1,6 @@
 @import "../../styles/variables.scss";
 
-#projects-container {
+#Projetos {
   margin: 4rem 0.5rem;
   border-radius: 2.5rem;
   display: flex;
@@ -8,7 +8,7 @@
   justify-content: center;
   align-items: center;
 
-  #projects {
+  #projects-cards {
     width: 100%;
     display: grid;
     grid-template-columns: 1fr;
@@ -38,8 +38,8 @@
 }
 
 @media (min-width: 768px) {
-  #projects-container {
-    #projects {
+  #Projetos {
+    #projects-cards {
       grid-template-columns: 1fr 1fr;
       gap: 1.8rem;
     }
@@ -47,8 +47,8 @@
 }
 
 @media (min-width: 900px) {
-  #projects-container {
-    #projects {
+  #Projetos {
+    #projects-cards {
       width: 90%;
     }
   }

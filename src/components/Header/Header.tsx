@@ -11,7 +11,11 @@ import MenuNavegation from "../MenuNavegation/MenuNavegation";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import HeaderContent from "../HeaderContent/HeaderContent";
 
-const Header = () => {
+interface HeaderProps {
+  idContainer: string;
+}
+
+const Header = ({ idContainer }: HeaderProps) => {
   //gerencia o estado do menu: ativo(true) ou desativado(false)
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -28,7 +32,7 @@ const Header = () => {
   };
 
   return (
-    <header id="header-container">
+    <header id={idContainer}>
       <div id="nav-container">
         <div id="logo">
           <p>Portifólio</p>

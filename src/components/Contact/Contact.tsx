@@ -15,7 +15,11 @@ import emailJs from "@emailjs/browser";
 //animação
 import { motion } from "framer-motion";
 
-const Contact = () => {
+interface ContactProps {
+  idContainer: string;
+}
+
+const Contact = ({ idContainer }: ContactProps) => {
   const [clientName, setClientName] = useState("");
   const [clientMessage, setClientMessage] = useState("");
   const [clientEmail, setClientEmail] = useState("");
@@ -50,7 +54,7 @@ const Contact = () => {
 
   return (
     <motion.section
-      id="contact-container"
+      id={idContainer}
       initial={{ opacity: 0, x: -100 }}
       whileInView={{ opacity: 1, x: 0 }}
       exit={{ opacity: 0 }}
