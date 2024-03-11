@@ -61,19 +61,19 @@ const MenuNavegation = ({
 
       <span className="border-links"></span>
       <div id="nav-options-container">
-        <Link href="#header-container" onClick={handleClick}>
+        <Link href="/" onClick={handleClick}>
           Home
         </Link>
         <span className="barra">|</span>
-        <Link href="#about-me-container" onClick={handleClick}>
+        <Link href="#Sobre-mim" onClick={handleClick}>
           Sobre mim
         </Link>
         <span className="barra">|</span>
-        <Link href="#projects-container" onClick={handleClick}>
+        <Link href="#Projetos" onClick={handleClick}>
           Meus Projetos
         </Link>
         <span className="barra">|</span>
-        <Link href="#contact-container" onClick={handleClick}>
+        <Link href="#Contato" onClick={handleClick}>
           Contato
         </Link>
       </div>
