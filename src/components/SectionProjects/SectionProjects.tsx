@@ -13,8 +13,9 @@ import { useState, useEffect } from "react";
 import { fetchDataFromDatoCMS } from "../Lib/DataCMS";
 import ProjectItem from "./ProjectItem";
 import TitleContainer from "../TitleContainer/TitleContainer";
+import Link from "next/link";
 
-const Projects = () => {
+const SectionProjects = () => {
   const [projects, setProjects] = useState([]);
 
   useEffect(() => {
@@ -49,8 +50,9 @@ const Projects = () => {
           />
         ))}
       </div>
+      <Link href="/Projects">Veja todos os projetos</Link>
     </motion.section>
   );
 };
 
-export default Projects;
+export default SectionProjects;
